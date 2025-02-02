@@ -3,7 +3,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body{
-    background: url(images/mapa-mundi.jpg);
+    background: url(../images/mapa-mundi.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
