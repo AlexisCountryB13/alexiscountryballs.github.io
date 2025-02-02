@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #868686;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(24, 10, 51);
+    border-bottom: 1px #494949 solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#nav-list {
+    text-align: center;
+    list-style: none;
+    background-color: rgb(24, 10, 51);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    display: flex;
+    gap: 2REM;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin: 0.0001px;
+    padding: 0px;
+    z-index: 2;
+}
+
+#nav-list.active {
+    top: 0;
+}
+
+#nav-list li {
+    margin-bottom: 10%;
+}
+
+#nav-list li a {
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#nav-list li a:hover {
+    border-bottom: 4px solid #4b6cff;
+}
+
+#menu-toggle {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    color: #ffff;
+    z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #nav-list {
+        text-align: center;
+        background-color: none;
+        width: initial;
+        height: initial;
+        position: static;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .ifrasub {
+        width: 300px;
+        height: 80px;
+    }
+    
+}
+
+#titulo {
+    color: #ffff;
+    z-index: 3;
+}
+
+h1 {
+    font-size: xx-large;
+    color: rgb(17, 17, 17);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.coniframeres {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.youtube {
+    border-radius: 10px;
+    width: 22%;
+}
+
+.bandlab {
+    border-radius: 10px;
+    width: 22%;
+}
+
+.roblox {
+    border-radius: 10px;
+    width: 22%;
+}
+
+#btndwld {
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #1800a3;
+    color: #ffff;
+    width: 39%;
+    height: 50px;
+    font-weight: 600;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.calcu {
+    width: 25%;
+}
+
+.divdiego {
+    width: 100%;
+    height: 1%;
+    margin: 20px;
+    align-items: center;
+}
+
+aside {
+    padding: 0;
+    margin: 0;
+    background-color: #bbbac0;
+    width: 75%;
+    float: right;
+}
+
+#addstxt {
+    float: left;
+    padding: 20px;
+    width: 20%;
+}
+
+#textahref {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-line: none;
+}
+
+.users {
+    border-radius: 100%;
+}
+
+.pie-pagina {
+    width: 100%;
+    color: #ffff;
+    background-color: #181331;
+}
+
+.ifrasub {
+    width: 100%;
+    height: 100%;
+}
+
+.icons:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.imgp {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.imgp:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
