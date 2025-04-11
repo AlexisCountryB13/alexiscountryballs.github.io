@@ -9,7 +9,7 @@ html {
     padding: 0;
     margin: 0;
     background-color: #868686;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe zUI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -69,7 +69,7 @@ header {
     z-index: 2;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
     #menu-toggle {
         display: none;
@@ -89,7 +89,14 @@ header {
         width: 300px;
         height: 80px;
     }
-    
+ 
+    .imgp {
+        width: 90%;
+        align-items: center;
+        border-radius: 15px;
+        margin: 15px;
+    }
+
 }
 
 #titulo {
@@ -98,15 +105,29 @@ header {
 }
 
 h1 {
-    font-size: xx-large;
+    font-size: x-large;
     color: rgb(17, 17, 17);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.coniframeres {
-    position: relative;
+.juegos {
+    margin-top: 400px;
+}
+
+.contenedorvideos {
+    width: 25%;
+    margin: 50px;
+    float: left;
     overflow: hidden;
-    width: 100%;
+    border: 1px solid #000;
+    margin: 55px;
+}
+
+.imgp {
+    width: 90%;
+    align-items: center;
+    border-radius: 15px;
+    margin: 15px;
 }
 
 .youtube {
@@ -140,27 +161,6 @@ h1 {
     width: 25%;
 }
 
-.divdiego {
-    width: 100%;
-    height: 1%;
-    margin: 20px;
-    align-items: center;
-}
-
-aside {
-    padding: 0;
-    margin: 0;
-    background-color: #bbbac0;
-    width: 75%;
-    float: right;
-}
-
-#addstxt {
-    float: left;
-    padding: 20px;
-    width: 20%;
-}
-
 #textahref {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -178,7 +178,7 @@ aside {
 }
 
 .ifrasub {
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 
@@ -187,12 +187,91 @@ aside {
     transition: 0.5s;
 }
 
-.imgp {
-    width: 100%;
-    border-radius: 15px;
-}
-
 .imgp:hover {
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+img {
+    padding-top: 20px;
+}
+
+h1 {
+    padding-top: 10px;
+}
+
+h2 {
+    padding-top: 10px;
+}
+
+p {
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 1320px) and (min-width: 1247px)  {
+    .juegos {
+        margin-top: 200px;
+    }
+
+    .contenedorvideos {
+        width: 24.5%;
+        margin: 50px;
+        float: left;
+        overflow: hidden;
+        border: 1px solid #000;
+        margin: 55px;
+    }
+
+    .ifrasub {
+        width: 300px;
+        height: 80px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    
+    .imgp {
+        width: 90%;
+    }
+
+    .contenedorvideos {
+        width: 85%;
+        margin: 50px;
+        overflow: hidden;
+        float: none;
+        border: 1px solid #000;
+    }
+    
+    .juegos {
+        margin-top: 0;
+    }
+
+    .ifrasub {
+        width: 300px;
+        height: 80px;
+    }
+    
+
+}
+
+@media screen and (max-width: 1246px) and (min-width: 769px)  {
+    .juegos {
+        margin-top: 650px;
+    }
+
+    .contenedorvideos {
+        width: 24.5%;
+        margin: 50px;
+        float: left;
+        overflow: hidden;
+        border: 1px solid #000;
+        margin: 55px;
+    }
+
+    .ifrasub {
+        width: 300px;
+        height: 80px;
+    }
+
 }

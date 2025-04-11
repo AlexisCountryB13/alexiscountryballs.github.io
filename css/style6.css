@@ -1,0 +1,88 @@
+body {
+    background-image: url(../images/sobg.jpg);
+}
+
+img {
+    width: 25%;
+    cursor: pointer;
+}
+
+img :hover {
+    transform: scale(1.5);
+    transition: 1.5s;
+}
+
+.si {
+    text-align: center;
+    margin: 20px;
+}
+
+.wsi {
+    margin: 25px;
+    cursor: pointer;
+}
+
+.ai {
+    margin: 20px;
+    float: right;
+    width: 28%;
+    cursor: pointer;
+}
+
+.nl {
+    margin: 25px;
+    float: right;
+}
+
+@media screen and (max-width: 768px)  {
+    img {
+        width: 35%;
+    }
+
+    .si {
+        text-align: center;
+        margin: 25px;
+    }
+    
+    .wsi {
+        margin: 25px;
+       
+    }
+    
+    .ai {
+        margin: 15px;
+        float: right;
+    }
+    
+    .nl {
+        margin: 25px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1150px)  and (min-width: 769px){
+    img {
+        width: 45%;
+        cursor: pointer;
+    }
+
+    .si {
+        text-align: center;
+        margin: 25px;
+    }
+    
+    .wsi {
+        margin: 25px;
+    }
+    
+    .ai {
+        margin: 15px;
+        float: right;
+
+    }
+    
+    .nl {
+        margin: 25px;
+        float: right;
+    }
+}

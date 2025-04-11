@@ -10,12 +10,10 @@ const canvas = document.getElementById('gameCanvas');
     };
     let score = 0;
 
-    // Draw the game elements
     function drawGame() {
       ctx.fillStyle = '#000';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Draw the snake
       for (let i = 0; i < snake.length; i++) {
         ctx.fillStyle = i === 0 ? 'lime' : 'white';
         ctx.fillRect(snake[i].x, snake[i].y, box, box);
@@ -23,16 +21,13 @@ const canvas = document.getElementById('gameCanvas');
         ctx.strokeRect(snake[i].x, snake[i].y, box, box);
       }
 
-      // Draw the food
       ctx.fillStyle = 'red';
       ctx.fillRect(food.x, food.y, box, box);
 
-      // Draw the score
       ctx.fillStyle = 'white';
       ctx.font = '20px Arial';
       ctx.fillText(`Score: ${score}`, 10, 20);
 
-      // Move the snake
       let snakeX = snake[0].x;
       let snakeY = snake[0].y;
 
@@ -41,7 +36,6 @@ const canvas = document.getElementById('gameCanvas');
       if (direction === 'RIGHT') snakeX += box;
       if (direction === 'DOWN') snakeY += box;
 
-      // Check if the snake eats the food
       if (snakeX === food.x && snakeY === food.y) {
         score++;
         food = {
